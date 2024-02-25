@@ -1,0 +1,5 @@
+Employee ID ,Department ID,Date,Amount,Status
+100,1,10/22/2022,10000,Approved
+300,1,10/26/2022,500000,Pending
+180,1,10/22/2022,18000,Approved
+250,1,10/26/2022,650000,Approved

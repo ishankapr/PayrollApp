@@ -1,0 +1,44 @@
+﻿{
+  "Routes": [
+    // Authentication web API
+    {
+      "UpstreamPathTemplate": "/authservice/authenticate",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5282
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Account/authenticate"
+    },
+    {
+      "UpstreamPathTemplate": "/fetchdataservice/getfileinfo",
+      "UpstreamHttpMethod": [ "GET"],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5237
+        }
+      ],
+      "DownstreamPathTemplate": "/api/EmployeeInformation/getemployeeinfo"
+    },
+    {
+      "UpstreamPathTemplate": "/importdataservice/importfile",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5033
+        }
+      ],
+      "DownstreamPathTemplate": "/api/FileImport/importfile"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5150"
+  }
+}

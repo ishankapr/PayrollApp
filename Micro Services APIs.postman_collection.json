@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "2630d9f6-2384-451a-8687-b74ba9415678",
+		"name": "Micro Services APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29728967"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"user\",\r\n    \"Password\":\"user123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5150/authservice/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5150",
+					"path": [
+						"authservice",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import File",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlciIsInJvbGUiOiJVc2VyIiwibmJmIjoxNzA1NzcyMjE1LCJleHAiOjE3MDU3Nzc2MTUsImlhdCI6MTcwNTc3MjIxNX0.-aWbxCzDOEenJnMfgIE_-iYw4gBjLQ6Si7C5FYXbr_A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/PayrollApp/Employee Alowances.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5150/importdataservice/importfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5150",
+					"path": [
+						"importdataservice",
+						"importfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5150/fetchdataservice/getfileinfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5150",
+					"path": [
+						"fetchdataservice",
+						"getfileinfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

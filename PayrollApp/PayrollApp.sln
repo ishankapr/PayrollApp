@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{13E68BDC-A009-4A79-B3FD-5F6A04EB318A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "..\ApiGateway\ApiGateway.csproj", "{1FF074AC-489D-40E7-83BB-D67F3E778BDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthHandler", "..\JWTAuth\JwtAuthHandler.csproj", "{948BD2A7-7621-4E3F-9D8B-9C8C0EDC56A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationWebApi", "..\AuthenticationWebApi\AuthenticationWebApi.csproj", "{E83DD572-9EDA-44AC-B3D8-FE118211FE98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportDataService", "..\ImportDataService\ImportDataService.csproj", "{9FE7D663-0AD2-4810-B6C1-7A27438A9FED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtToken.tests", "JwtToken.tests\JwtToken.tests.csproj", "{F01D8BB9-DC33-45AB-80C6-0B84DAC6F449}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeInfoService", "..\EmployeeInfoService\EmployeeInfoService.csproj", "{1D231276-F301-42F4-ACE4-D4823CF7E7AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadTests", "..\FileUploadTests\FileUploadTests.csproj", "{1F35213E-5A94-44B6-944C-335CF1E594FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FF074AC-489D-40E7-83BB-D67F3E778BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF074AC-489D-40E7-83BB-D67F3E778BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF074AC-489D-40E7-83BB-D67F3E778BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF074AC-489D-40E7-83BB-D67F3E778BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948BD2A7-7621-4E3F-9D8B-9C8C0EDC56A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948BD2A7-7621-4E3F-9D8B-9C8C0EDC56A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948BD2A7-7621-4E3F-9D8B-9C8C0EDC56A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948BD2A7-7621-4E3F-9D8B-9C8C0EDC56A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83DD572-9EDA-44AC-B3D8-FE118211FE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83DD572-9EDA-44AC-B3D8-FE118211FE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83DD572-9EDA-44AC-B3D8-FE118211FE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83DD572-9EDA-44AC-B3D8-FE118211FE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE7D663-0AD2-4810-B6C1-7A27438A9FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE7D663-0AD2-4810-B6C1-7A27438A9FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE7D663-0AD2-4810-B6C1-7A27438A9FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE7D663-0AD2-4810-B6C1-7A27438A9FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01D8BB9-DC33-45AB-80C6-0B84DAC6F449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01D8BB9-DC33-45AB-80C6-0B84DAC6F449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01D8BB9-DC33-45AB-80C6-0B84DAC6F449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01D8BB9-DC33-45AB-80C6-0B84DAC6F449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D231276-F301-42F4-ACE4-D4823CF7E7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D231276-F301-42F4-ACE4-D4823CF7E7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D231276-F301-42F4-ACE4-D4823CF7E7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D231276-F301-42F4-ACE4-D4823CF7E7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F35213E-5A94-44B6-944C-335CF1E594FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F35213E-5A94-44B6-944C-335CF1E594FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F35213E-5A94-44B6-944C-335CF1E594FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F35213E-5A94-44B6-944C-335CF1E594FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FE7D663-0AD2-4810-B6C1-7A27438A9FED} = {13E68BDC-A009-4A79-B3FD-5F6A04EB318A}
+		{1D231276-F301-42F4-ACE4-D4823CF7E7AE} = {13E68BDC-A009-4A79-B3FD-5F6A04EB318A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C2A80FD-09B0-4746-AB97-AEFED9E99B4E}
+	EndGlobalSection
+EndGlobal
