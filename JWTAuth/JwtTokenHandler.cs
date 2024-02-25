@@ -14,7 +14,7 @@ namespace JWTAuth
     public class JwtTokenHandler
     {
         //These values need to fetch from config in actual scenario
-        public const string SECURITY_KEY = "4f1feeca525de4cdb064656007da3edac7895a87ff0ea865693300fb8b6e8f9c";
+        public const string SECURITY_KEY = "HASH_KEY";
         private const int VALID_MINUTES = 90;
         private List<UserAccount> _accounts = new();
         private IConfiguration _configuration;
